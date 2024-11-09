@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Health Tracker</h1>
+    <form id="healthForm">
+        <label for="steps">Steps Taken:</label>
+        <input type="number" id="steps" name="steps" required>
+
+        <label for="calories">Calories Consumed:</label>
+        <input type="number" id="calories" name="calories" required>
+
+        <label for="water">Water Intake (liters):</label>
+        <input type="number" id="water" name="water" step="0.1" required>
+
+        <label for="sleep">Sleep Hours:</label>
+        <input type="number" id="sleep" name="sleep" step="0.1" required>
+
+        <button type="submit">Submit</button>
+    </form>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
